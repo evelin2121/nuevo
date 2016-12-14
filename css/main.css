@@ -1,0 +1,126 @@
+/*
+Breakpoints: 
+320px - 375px; GREEN
+376px - 667px; YELLOW
+667px - 1024px; RED
+1024px - 1600px; BLUE
+*/
+
+
+h1{
+	text-align: center;
+}
+
+
+.foto-one{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 600px;
+
+}
+
+.foto-dos{
+	width: 200px;
+	height: 200px;
+
+}
+
+.foto-tres{
+	width: 200px;
+	height: 200px;
+
+}
+
+@media (min-width:200px ) and ( max-width:475px ){
+	body{
+		background-image: url(../image/fondo-dos.jpg);
+	}
+  
+  .foto-one{
+	position: relative;
+	left: 5px;
+}
+
+h1{
+	color:blue;
+}
+
+}
+
+@media (min-width:476px ) and ( max-width:767px ){
+	body{
+		background-color: yellow;
+	}
+
+.foto-one{
+  position: relative;
+  left: 320px;
+
+
+} 
+
+.foto-dos{
+	position: relative;
+	top:210px;
+	left: 120px;
+}
+
+.foto-tres{
+	position: relative;
+	top:420px;
+	right: 99px;
+
+	
+}
+}
+
+@media (min-width:768px ) and ( max-width:1024px ){
+	body{
+		background-image: url(../image/fondo-tres.png);
+	}
+
+.foto-one{
+  position: relative;
+  left: 450px;
+
+
+} 
+
+.foto-dos{
+	position: relative;
+	top:210px;
+	left: 250px;
+}
+
+.foto-tres{
+	position: relative;
+	top:420px;
+	left:33px;
+}
+
+h1{
+	color:red;
+}
+
+}
+
+
+@media (min-width:1025px ) and ( max-width:1600px ){
+	body{
+		background-image: url(../image/fondo.jpg);
+	}
+
+	.foto-one{
+	position: relative;
+	left: 630px;
+	
+}
+.cajas{
+	position: relative;
+	top:200px;
+	left: 180px;
+}
+
+
+}
